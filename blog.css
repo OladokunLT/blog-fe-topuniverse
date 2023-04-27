@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-one: #7F56D9;
+    --color-two: #7F56D9;
+    --color-two: #7F56D9;
+}
+.container {
+    margin-inline: 7.8%;
+    margin-block: 5.8%;
+    border: solid 1px red
+}
+.header-section {
+    text-align: center;
+}
+p {
+    width: 768px;
+    background-color: blue;
+}
