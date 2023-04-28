@@ -47,7 +47,7 @@ header.content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 2.7778%; */
+    row-gap: 2.5rem;
     align-self: stretch;
 }
 .heading-supporting-text {
@@ -56,11 +56,19 @@ header.content {
     align-items: center;
     width: 78.9474%;
     background-color: pink;
-    /* gap: 24px; */
+    row-gap: 1.5rem;
 }
 header.heading-subheading {
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
-    /* row-gap: 1.25%; */
+     row-gap: 12px;
+}
+header.heading-subheading h4 {
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #7F56D9;
+}
+header.heading-subheading h1 {
+
 }
