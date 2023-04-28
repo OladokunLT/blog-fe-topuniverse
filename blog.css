@@ -78,14 +78,15 @@ header form.email-capture {
     justify-content: space-between;
     gap: 1rem;
     /* width: 40.625%; */
-    /* background-color: yellow; */
+    background-color: yellow;
 }
 header div.input-field-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: .5rem;
-    width: 72.8745%
+    width: 72.8745%;
+    font-size: 1rem;
 }
 header div.input-field-wrapper .input-field {
     padding-block: 12px;
@@ -115,12 +116,68 @@ form input.btn {
     /* width: 23.8866%; */
     background: #7F56D9;
     border: 1px solid #7F56D9;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    box-shadow: 0px 1px 2px #1018280d;
     border-radius: .5rem;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: 500;
     line-height: 1.5rem;
     color: #FFFFFF;
     cursor: pointer;
     /* align-self: stretch; */
+}
+
+@media (width <= 768px ) {
+    .container {
+        margin-inline: 1%;
+        padding-inline: 2.2223%;
+    }
+    header.heading-subheading h4 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        color: #7F56D9;
+    }
+    header.heading-subheading h1 {
+        /* font-weight: 600; */
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        letter-spacing: -0.02em;
+        color: #101828;
+    }
+    .heading-supporting-text {
+        /* display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center; */
+        width: 100%;
+        row-gap: 1.5rem;
+    }
+    header div.supporting-text {
+        width: 100%;
+    }
+    header div.supporting-text p{
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: #667085;
+    }
+    header form.email-capture {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+    header div.input-field-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+    form input.btn {
+        align-self: stretch;
+    }
 }
