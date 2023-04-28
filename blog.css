@@ -77,8 +77,6 @@ header form.email-capture {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
-    /* width: 40.625%; */
-    background-color: yellow;
 }
 header div.input-field-wrapper {
     display: flex;
@@ -106,24 +104,16 @@ form div.hint-text-wrapper p {
     align-self: stretch;
 }
 form input.btn {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding-block: 1.9%; */
     padding-block: 8px;
     padding-inline: 20px;
-    /* width: 23.8866%; */
     background: #7F56D9;
     border: 1px solid #7F56D9;
     box-shadow: 0px 1px 2px #1018280d;
     border-radius: .5rem;
-    /* font-size: 1rem; */
     font-weight: 500;
     line-height: 1.5rem;
     color: #FFFFFF;
     cursor: pointer;
-    /* align-self: stretch; */
 }
 
 @media (width <= 768px ) {
@@ -138,17 +128,12 @@ form input.btn {
         color: #7F56D9;
     }
     header.heading-subheading h1 {
-        /* font-weight: 600; */
         font-size: 2.25rem;
         line-height: 2.75rem;
         letter-spacing: -0.02em;
         color: #101828;
     }
     .heading-supporting-text {
-        /* display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center; */
         width: 100%;
         row-gap: 1.5rem;
     }
@@ -162,18 +147,11 @@ form input.btn {
         color: #667085;
     }
     header form.email-capture {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1rem;
         width: 100%;
     }
     header div.input-field-wrapper {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: .5rem;
         width: 100%;
         font-size: 1rem;
     }
