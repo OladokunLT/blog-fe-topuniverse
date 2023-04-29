@@ -17,13 +17,17 @@ body {
     align-items: center;
     background-color: #FFFFFF;
     font-family: inter, sans-serif;
+    /* min-width: 375px; */
+    /* min-height: 100vh; */
 }
-.header-section {
+.header-section,
+.main-section {
     align-self: stretch;
-    height: 20.9173%;
     padding-block: 6.6667%;
+    /* background-color: pink; */
 }
-.container {
+.container,
+.blog-posts-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,8 +95,6 @@ header div.input-field-wrapper .input-field {
     padding-inline-start: 1rem;
     padding-inline-end: .875rem;
     align-self: stretch;
-    flex-grow: 1;
-    background: #FFFFFF;
     border: 1px solid #D0D5DD;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: .5rem;
@@ -115,8 +117,28 @@ form input.btn {
     color: #FFFFFF;
     cursor: pointer;
 }
+/* heading section ends */
+
+/* Section - Recent post styles */
+.main-section {
+    padding-block-start: 0;
+    /* align-self: stretch; */
+    background-color: pink;
+    border: solid 1px red;
+}
+    .blog-posts-container {
+        padding-block-end: 6.6667%;
+        /* padding-block: 6.6667%; */
+    }
+    .blog-posts-container:last-of-type {
+        padding-block-end: 0;
+        /* padding-block: 6.6667%; */
+    }
+
+
 
 @media (width <= 768px ) {
+    /* header section styles */
     .container {
         margin-inline: 1%;
         padding-inline: 2.2223%;
@@ -158,4 +180,5 @@ form input.btn {
     form input.btn {
         align-self: stretch;
     }
+    /* End of header section */
 }
