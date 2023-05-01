@@ -20,6 +20,9 @@ body {
     /* min-width: 375px; */
     /* min-height: 100vh; */
 }
+.hide {
+    display: none;
+}
 .header-section,
 .main-section {
     align-self: stretch;
@@ -123,19 +126,86 @@ form input.btn {
 .main-section {
     padding-block-start: 0;
     /* align-self: stretch; */
-    background-color: pink;
+    /* background-color: pink; */
     border: solid 1px red;
 }
-    .blog-posts-container {
-        padding-block-end: 6.6667%;
-        /* padding-block: 6.6667%; */
-    }
-    .blog-posts-container:last-of-type {
-        padding-block-end: 0;
-        /* padding-block: 6.6667%; */
-    }
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-posts-container {
+    padding-block-end: 6.6667%;
+}
+.blog-posts-container:last-of-type {
+    padding-block-end: 0;
+}
+main section .blog-post-heading-h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #101828;
+    align-self: stretch;
+    text-transform: capitalize;
+    padding-block-end: 0.75rem;
+}
 
+main section .cards-wrapper {
+    display: grid;
+    gap: 2rem;
+    align-self: stretch;
 
+}
+main section #recent-posts {
+    border: solid 1px blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background: green; */
+    /* align-self: stretch; */
+}
+main section #all-posts {
+    border: solid 1px yellow;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main section .card {
+    border: solid;
+    display: grid;
+    gap: 2rem;
+}
+figure {
+    /* background-image: url("./images/Olivia-Rhye.jpg"); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 243px;
+    background-color: rgb(49, 65, 60);
+}
+main section .card figure img {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    /* height: 243px; */
+    /* object-fit: cover; */
+    object-fit: contain;
+    /* aspect-ratio: 1; */
+    /* flex-grow: 1; */
+}
+article .author-post-date {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+    color: #6941C6;
+    align-self: stretch;
+    font-weight: 600;
+    padding-block-end: 0.75rem;
+}
+
+article .describe {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #667085;
+    align-self: stretch;
+    padding-block-end: 1.625rem;
+}
 
 @media (width <= 768px ) {
     /* header section styles */
@@ -181,4 +251,11 @@ form input.btn {
         align-self: stretch;
     }
     /* End of header section */
+    /* ====================================== */
+    /* Start of mobile style */
+    main section .blog-post-heading-h2 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+
 }
