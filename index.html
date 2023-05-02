@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./blog.css">
 </head>
 <body>
-    <header class="header-section hide">
+    <header class="header-section">
         <div class="container">
             <header class="content">
                 <header class="heading-supporting-text">
@@ -36,7 +36,7 @@
     <main class="main-section">
         <section id="recent-blog-posts" class="blog-posts-container">
             <h2 class="blog-post-heading-h2">Recent blog posts</h2>
-            <div class="cards-wrapper" id="recent-posts">
+            <div class="cards-wrapper recent-posts" id="recent-posts">
                 <div class="card">
                     <figure class="fetured-image">
                         <img src="./images/Olivia-Rhye.jpg" alt="image hare">
@@ -61,7 +61,7 @@
                         </div>   
                     </article>
                 </div>
-                <div id="all-posts-col-2">
+                <div id="recent-posts-col-2" class="recent-posts-col-2">
                     <div class="card last-two-recents">
                         <figure class="fetured-image">
                             <img src="./images/Phoenix-Baker.jpg" alt="Image of persons working with laptop">
@@ -69,10 +69,10 @@
                         <article class="content">
                             <p class="author-post-date">Phoenix Baker • 19 Jan 2022</p>
                             <div class="header-with-arrow">
-                                <h2 class="blog-post-heading-h2">
+                                <h2 class="blog-post-heading-h2" id="reduced-h2">
                                     Migrating to Linear 101
                                 </h2>
-                                <img src="./images/launch-arrow.svg" alt="launch arror icon">
+                                <img src="./images/launch-arrow.svg" alt="launch arror icon" class="hide-launch-arrow">
                             </div>
                             <p class="describe">
                                 Linear helps streamline software 
@@ -94,10 +94,10 @@
                         <article class="content">
                             <p class="author-post-date">Lana Steiner • 18 Jan 2022</p>
                             <div class="header-with-arrow">
-                                <h2 class="blog-post-heading-h2">
+                                <h2 class="blog-post-heading-h2" id="reduced-h2">
                                     Building your API Stack
                                 </h2>
-                                <img src="./images/launch-arrow.svg" alt="launch arror icon">
+                                <img src="./images/launch-arrow.svg" alt="launch arror icon" class="hide-launch-arrow">
                             </div>
                             <p class="describe">
                                 The rise of RESTful APIs has been met 
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section id="all-blog-posts" class="blog-posts-container">
+        <section id="all-blog-posts" class="blog-posts-container ">
             <h2 class="blog-post-heading-h2">All blog posts</h2>
             <div class="cards-wrapper" id="all-posts">
     <!------------- Row 1 ----------------------->
