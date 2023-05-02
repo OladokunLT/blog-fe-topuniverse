@@ -257,6 +257,38 @@ article .describe {
     color: #C01048;
 } 
 
+
+/**************** Pagination at footer *****************/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-block-start: 86px;
+    align-self: stretch;
+} 
+.pagination {
+display: inline-block;
+}
+
+.pagination a {
+color: #7F56D9;
+border-radius: 8px;
+padding: 10px 16px;
+text-decoration: none;
+transition: background-color .3s;
+margin: 0 2px;
+}
+
+.pagination a.active {
+background-color: #F9F5FF;
+color: #7F56D9;
+border: 1px solid #F9F5FF;
+}
+
+.pagination a:hover:not(.active) {background-color: #F9F5FF;}
+
  @media(width <= 900px) {
    
     .blog-posts-container
