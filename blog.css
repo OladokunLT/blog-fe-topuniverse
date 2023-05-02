@@ -258,7 +258,13 @@ article .describe {
 } 
 
  @media(width <= 900px) {
-    main section .recent-posts {
+   
+    .blog-posts-container
+    .container {
+        margin-inline: 1%;
+        padding-inline: 2.2223%;
+    }
+     main section .recent-posts {
          display: grid;
          grid-template-columns: 1fr;
     }
@@ -282,6 +288,7 @@ article .describe {
 
 @media (width <= 600px ) {
     /* header section styles */
+    .blog-posts-container
     .container {
         margin-inline: 1%;
         padding-inline: 2.2223%;
