@@ -139,7 +139,6 @@ main section .cards-wrapper {
     align-self: stretch;
 }
 main section .recent-posts {
-    border: solid 1px blue;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -149,7 +148,6 @@ main section #all-posts {
     column-gap: 2rem;
 }
 main section .card {
-    border: solid;
     display: grid;
     gap: 2rem;
 }
@@ -261,7 +259,6 @@ article .describe {
 
  @media(width <= 900px) {
     main section .recent-posts {
-         border: solid 1px blue;
          display: grid;
          grid-template-columns: 1fr;
     }
@@ -277,7 +274,6 @@ article .describe {
         display: flex;
     }        
     main section #all-posts {
-        border: solid 1px yellow;
         grid-template-columns: 1fr 1fr;
         row-gap: 3rem;
         column-gap: 2rem;
