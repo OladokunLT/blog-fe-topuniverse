@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inter, sans-serif;
 }
 html {
     font-size: 16px;
@@ -46,7 +47,7 @@ header.content {
 header.heading-subheading {
     display: flex;
     flex-direction: column;
-     row-gap: 12px;
+    row-gap: 12px;
 }
 header.heading-subheading h4 {
     font-weight: 600;
@@ -99,6 +100,11 @@ form div.hint-text-wrapper p {
     color: #667085;
     align-self: stretch;
 }
+a {
+    color : #667085;
+    /* text-decoration-line: underline; */
+    text-underline-offset: 5px;
+}
 form input.btn {
     padding-block: 8px;
     padding-inline: 20px;
@@ -111,11 +117,15 @@ form input.btn {
     color: #FFFFFF;
     cursor: pointer;
 }
+input, button {
+    font-family: inter, sans-serif;
+    color : #667085;
+}
 /* heading section ends */
 
 /* Section - Recent post styles */
 .main-section {
-    padding-block-start: 0;
+   padding-block-start: 0;
 }
 .blog-posts-container {
     padding-block-end: 6.6667%;
