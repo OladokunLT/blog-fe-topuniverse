@@ -1,0 +1,24 @@
+.popup {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    background: navajowhite;
+    visibility: hidden;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+
+.open-popup {
+    top: 50%;
+    transition: 1s ease-in-out;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+.close-popup-btn {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+}

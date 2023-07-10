@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://oladokunlt.github.io/blog-fe-topuniverse" >
     <title>Blog post | Our Stories and interviews</title>
     <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <header class="header-section">
@@ -35,12 +36,23 @@
                             <p>We care about your data in our <a href="#" aria-pressed="false"> policy </a></p>
                         </div>
                     </div>
-                    <input type="submit" value="Subscribe" class="btn" aria-pressed="true">
-                    <!-- <button type="submit" class="btn"></button> -->
+                    <input 
+                        type="submit" 
+                        value="Subscribe" 
+                        class="btn" 
+                        aria-pressed="true"
+                        id="subscribe-btn"
+                        onclick="handleOpenPopup(event)"
+                    >
                 </form>
             </header>
         </div>
     </header>
+    <div class="popup" id="popup">
+        <h2>Thank you</h2>
+        <p>You have successfully Subscribed.</p>
+        <button type="button" class="close-popup-btn" onclick="handleClosePopup()">OK</button>
+    </div>
     <main class="main-section" id="main">
         <section id="recent-blog-posts" class="blog-posts-container">
             <h2 class="blog-post-heading-h2">Recent blog posts</h2>
@@ -302,5 +314,7 @@
         </section>
        
     </main>
+
+   <script src="popup.js"></script>
 </body>
 </html>
